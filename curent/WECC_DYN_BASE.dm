@@ -197,10 +197,13 @@ PSS1, Ic1 = 1, Ic2 = 0, K1 = 10.0, K2 = 0.0, T1 = 0.03, T10 = 0.0, T2 = 0.02,
 
 # TODO: PSS2 IC = 4 not working
 
+# == commented out on 11/15/2018
 PSS2, Ic = 2, avr = 0, idx = 25, name = "PSS2 1"
 PSS2, Ic = 2, avr = 11, idx = 26, name = "PSS2 2"
 PSS2, Ic = 2, avr = 24, idx = 27, name = "PSS2 3"
 PSS2, Ic = 2, avr = 12, idx = 28, name = "PSS2 4"
+# == commented out on 11/15/2018
+
 #PSS2, Ic = 4, avr = 4, idx = 29, name = "PSS2 5"
 #PSS2, Ic = 4, avr = 5, idx = 30, name = "PSS2 6"
 

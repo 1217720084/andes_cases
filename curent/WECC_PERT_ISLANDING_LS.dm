@@ -1,14 +1,14 @@
-#LoadShed, group = "StaticLoad", load = "PQ_103", t1 = 15
-#LoadShed, group = "StaticLoad", load = "PQ_101", t1 = 17
-#LoadShed, group = "StaticLoad", load = "PQ_99", t1 = 18
-#LoadShed, group = "StaticLoad", load = "PQ_100", t1 = 19
-#LoadShed, group = "StaticLoad", load = "PQ_91", t1 = 20
-#LoadShed, group = "StaticLoad", load = "PQ_79", t1 = 20
+LoadShed, group = "StaticLoad", load = "PQ_103", t1 = 15
+LoadShed, group = "StaticLoad", load = "PQ_101", t1 = 17
+LoadShed, group = "StaticLoad", load = "PQ_99", t1 = 18
+LoadShed, group = "StaticLoad", load = "PQ_100", t1 = 19
+LoadShed, group = "StaticLoad", load = "PQ_91", t1 = 20
+LoadShed, group = "StaticLoad", load = "PQ_79", t1 = 20
 
 # --- scenario 7, cut 92-93, 96-97, 87-85 (passed) (SELECT)
-Breaker, Vn = 500, bus = 92, fn = 60, idx=11, line = "Line_142", t1 = 5, u1 = 1, t2 = 30, u2 = 1
-Breaker, Vn = 500, bus = 96, fn = 60, idx=7, line = "Line_145", t1 = 5, u1 = 1, t2 = 30, u2 = 1
-#Breaker, Vn = 500, bus = 87, fn = 60, idx=8, line = "Line_134", t1 = 5, u1 = 1
+Breaker, Vn = 500, bus = 92, fn = 60, idx=11, line = "Line_142", t1 = 5, u1 = 1
+Breaker, Vn = 500, bus = 96, fn = 60, idx=7, line = "Line_145", t1 = 5, u1 = 1
+Breaker, Vn = 500, bus = 87, fn = 60, idx=8, line = "Line_134", t1 = 5, u1 = 1
 
 GenTrip, idx = 1, gen = 7, t1 = 1
 

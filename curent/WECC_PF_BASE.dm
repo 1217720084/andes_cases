@@ -2006,7 +2006,7 @@ Shunt, Sn = 100.0, Vn = 500.0, b = -0.91, bus = 113, fn = 60.0, g = 0.0, idx = "
        name = "Shunt 42", u = 1
 Shunt, Sn = 100.0, Vn = 500.0, b = -0.91, bus = 114, fn = 60.0, g = 0.0, idx = "Shunt_42",
        name = "Shunt 43", u = 1
-Shunt, Sn = 100.0, Vn = 20.0, b = 2.0, bus = 115, fn = 60.0, g = 0.0, idx = "Shunt_43",
+Shunt, Sn = 100.0, Vn = 20.0, b = -2.0, bus = 115, fn = 60.0, g = 0.0, idx = "Shunt_43",
        name = "Shunt 44", u = 1
 Shunt, Sn = 100.0, Vn = 200.0, b = -2.32, bus = 116, fn = 60.0, g = 0.0, idx = "Shunt_44",
        name = "Shunt 45", u = 1

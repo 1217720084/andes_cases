@@ -1,3 +1,17 @@
+#LoadShed, group = "StaticLoad", load = "PQ_103", t1 = 15
+#LoadShed, group = "StaticLoad", load = "PQ_101", t1 = 17
+#LoadShed, group = "StaticLoad", load = "PQ_99", t1 = 18
+#LoadShed, group = "StaticLoad", load = "PQ_100", t1 = 19
+#LoadShed, group = "StaticLoad", load = "PQ_91", t1 = 20
+#LoadShed, group = "StaticLoad", load = "PQ_79", t1 = 20
+
+# --- scenario 7, cut 92-93, 96-97, 87-85 (passed) (SELECT)
+Breaker, Vn = 500, bus = 92, fn = 60, idx=11, line = "Line_142", t1 = 5, u1 = 1, t2 = 30, u2 = 1
+Breaker, Vn = 500, bus = 96, fn = 60, idx=7, line = "Line_145", t1 = 5, u1 = 1, t2 = 30, u2 = 1
+#Breaker, Vn = 500, bus = 87, fn = 60, idx=8, line = "Line_134", t1 = 5, u1 = 1
+
+GenTrip, idx = 1, gen = 7, t1 = 1
+
 # 82-169
 #Breaker, Vn = 500.0, bus = 82, fn = 60.0, idx = 1, line = "Line_128",
 #         name = "Breaker 1", t1 = 1, t2 = 200.0, u1 = 1, u2 = 1
@@ -20,12 +34,6 @@
 # 179-80 (x2)
 #Breaker, Vn = 500, bus = 80, fn = 60, idx=10, line = "Line_119", t1 = 1, u1 = 1
 #Breaker, Vn = 500, bus = 80, fn = 60, idx=11, line = "Line_120", t1 = 1, u1 = 1
-
-
-#LoadShed, group = "StaticLoad", load = "PQ_103", t1 = 20
-#LoadShed, group = "StaticLoad", load = "PQ_101", t1 = 20
-#LoadShed, group = "StaticLoad", load = "PQ_99", t1 = 20
-#LoadShed, group = "StaticLoad", load = "PQ_100", t1 = 20
 
 # --- scenario 2: cut 75-81 (passed)
 #Breaker, Vn = 500, bus = 75, fn = 60, idx=6, line = "Line_110", t1 = 1, u1 = 1
@@ -50,11 +58,6 @@
 #Breaker, Vn = 500, bus = 92, fn = 60, idx=11, line = "Line_142", t1 = 1, u1 = 1
 #Breaker, Vn = 500, bus = 95, fn = 60, idx=7, line = "Line_144", t1 = 1, u1 = 1
 #Breaker, Vn = 500, bus = 87, fn = 60, idx=8, line = "Line_134", t1 = 1, u1 = 1
-
-# --- scenario 7, cut 92-93, 96-97, 87-85 (passed) (SELECT)
-Breaker, Vn = 500, bus = 92, fn = 60, idx=11, line = "Line_142", t1 = 5, u1 = 1
-Breaker, Vn = 500, bus = 96, fn = 60, idx=7, line = "Line_145", t1 = 5, u1 = 1
-Breaker, Vn = 500, bus = 87, fn = 60, idx=8, line = "Line_134", t1 = 5, u1 = 1
 
 # --- scenario 8, cut 92-93, 96-97, 85-89 (FAILED)
 #Breaker, Vn = 500, bus = 92, fn = 60, idx=11, line = "Line_142", t1 = 1, u1 = 1
@@ -95,16 +98,12 @@ Breaker, Vn = 500, bus = 87, fn = 60, idx=8, line = "Line_134", t1 = 5, u1 = 1
 #Breaker, Vn = 500, bus = 92, fn = 60, idx=11, line = "Line_142", t1 = 1, u1 = 1
 
 #Fault, idx = 1, bus = 76, tf = 1, tc = 1.05
-GenTrip, idx = 1, gen = 7, t1 = 1
-
 
 # ISLANDING Area 2
 
-# --- scenario 1: cut 27-28
+# --- scenario 1: cut 27-28 (failed)
 #Breaker, Vn = 500, bus = 27, fn = 60, idx=6, line = "Line_29", t1 = 10, u1 = 1
 #Breaker, Vn = 500, bus = 27, fn = 60, idx=7, line = "Line_30", t1 = 10, u1 = 1
-
-
 
 # PMUs to attack
 # 34,

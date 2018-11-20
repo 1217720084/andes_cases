@@ -10,7 +10,7 @@
 #Breaker, Vn = 500, bus = 96, fn = 60, idx=7, line = "Line_145", t1 = 5, u1 = 1
 #Breaker, Vn = 500, bus = 87, fn = 60, idx=8, line = "Line_134", t1 = 5, u1 = 1
 
-GenTrip, idx = 1, gen = 7, t1 = 10
+#GenTrip, idx = 1, gen = 7, t1 = 10
 
 # 82-169
 #Breaker, Vn = 500.0, bus = 82, fn = 60.0, idx = 1, line = "Line_128",

@@ -826,9 +826,9 @@ Area, idx = 1, name = "Area1"
 Area, idx = 2, name = "Area2"
 Area, idx = 3, name = "Area3"
 
-ACE, idx = 1, area = 1
-ACE, idx = 2, area = 2
-ACE, idx = 3, area = 3
+BArea, idx = 1, area = 1, beta = 6250, syn = [14; 15; 16]
+BArea, idx = 2, area = 2, beta = 4500, syn = [11; 12; 13; 10]
+BArea, idx = 3, area = 3, beta = 2000, syn = [1; 2; 3; 4; 5; 7; 8]
 
 COI, idx = 1, name = "COI 1", syn = [14; 15; 16]
 COI, idx = 2, name = "COI 2", syn = [11; 12; 13; 10]
@@ -840,9 +840,13 @@ COI, idx = 4, name = "COI 4", syn = [1; 2; 3; 4; 5; 6; 7; 8; 10; 11; 12; 13; 14;
 # TODO: Hold for 6 seconds
 # TODO: Limits on the AGC signals
 
-AGC, idx = 1, ace = 1, coi = 1, beta = 6250, Ki = 0.005, coi_measure = 1
-AGC, idx = 2, ace = 2, coi = 2, beta = 4500, Ki = 0.005, coi_measure = 2
-AGC, idx = 3, ace = 3, coi = 3, beta = 2000, Ki = 0.005, coi_measure = 3
+#AGC, idx = 1, ace = 1, coi = 1, beta = 6250, Ki = 0.005, coi_measure = 1
+#AGC, idx = 2, ace = 2, coi = 2, beta = 4500, Ki = 0.005, coi_measure = 2
+#AGC, idx = 3, ace = 3, coi = 3, beta = 2000, Ki = 0.005, coi_measure = 3
+
+AGC, idx = 1, BArea = 1, Ki = 0.005, syn = [14; 15; 16]
+AGC, idx = 2, BArea = 2, Ki = 0.005, syn = [11; 12; 13; 10]
+AGC, idx = 3, BArea = 3, Ki = 0.005, syn = [1; 2; 3; 4; 5; 7; 8]
 
 #AGC, idx = 1, ace = 1, coi = 1, beta = 0, Ki = 0.1, coi_measure = 1
 #AGC, idx = 2, ace = 2, coi = 2, beta = 0, Ki = 0.1, coi_measure = 2

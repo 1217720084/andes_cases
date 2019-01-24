@@ -19,13 +19,11 @@ Area, idx = 1, name = "Area 1"
 Area, idx = 2, name = "Area 2"
 Area, idx = 3, name = "Area 3"
 
-ACE, idx = 1, area = 1
-ACE, idx = 2, area = 2
-ACE, idx = 3, area = 3
+BArea, idx = 1, area = 1, syn = [1; 2; 3; 4], beta = 5
+BArea, idx = 2, area = 2, syn = [5], beta = 5
+#BArea, idx = 3, area = 3, syn = None, beta = 0
 
-COI, idx = 1, syn=[1; 2; 3; 4]
-
-AGC, idx = 1, coi = 1, ace = 1, beta = 5, Ki = 1/30
+AGC, idx = 1, BArea = 1, Ki = 1/30, syn = [1; 2; 3; 4]
 
 Region, Ptol = 9.9999, idx = 1, name = "14Bus   14", slack = 1.0
 
